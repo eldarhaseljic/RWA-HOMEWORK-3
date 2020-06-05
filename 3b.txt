@@ -1,0 +1,20 @@
+Detaljno objasniti sve izmjene koje (i ako!?) je potrebno napraviti u svim
+aspektima aplikacije od korisničkog interfejsa do arhitekture funkcionalnosti
+sistema, šeme baze podataka itd. da bi se omogućilo glasanje ne samo za YT
+video nego i za sljedeće elemente:
+● Tweet
+● Instagram post
+● Facebook post
+● Custom html snippets (npr. “Famous quotes”)
+Prilikom glasanja parovi elemenata bi se uvijek generisali iz iste kategorije, npr. ne
+bi se moglo desiti da se glasa izmedju sadržaja tipa Tweet i YT video.
+
+////////////////////////////////////////////////////////////////////
+Objasnjenje:
+
+Da bi se omogućilo da vrsimo glasanje za neki drugi tip elementa osim videozapisa 
+potrebno je da prvo u bazi napravimo entitet pod drugim imenom te spremati inforamcije o istom.
+Nakon toga se moze napraviti na main page i na admin page da imamo meni koji bi nam omogucio da 
+mijenjamo prikaz za sta glasamo tj u bazi bi samo u Select pozivu promijenili tabelu.
+Sto se tice brisanja, update ili dodavanja kroz ui on bi mogao ostati isti kao i za video, stim 
+da bi unosili druge podatke za dati element. 
